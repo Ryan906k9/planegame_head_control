@@ -51,7 +51,7 @@ def inc_speed(target,inc):
 
 def main():
     #加载音乐
-    pygame.mixer.music.load("sound/game_music.ogg")
+    pygame.mixer.music.load("sound/game_music.wav")
     pygame.mixer.music.set_volume(0.2)
     pygame.mixer.music.play()
 
