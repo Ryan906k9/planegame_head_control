@@ -256,7 +256,7 @@ class HeadPostEstimation(object):
             img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
             # 本地显示预测视频框，AIStudio项目不支持显示视频框
-            cv2.imshow('Pose Estimation', img_rgb)
+#            cv2.imshow('Pose Estimation', img_rgb)
 
             return pitch,yaw,distance
 
@@ -269,7 +269,7 @@ class MyFaceDetector(object):
     """
 
     def __init__(self):
-        self.module = hub.Module(name="ultra_light_fast_generic_face_detector_1mb_640")
+        self.module = hub.Module(name="ultra_light_fast_generic_face_detector_1mb_320")
         self.alpha = 0.75
         self.start_flag = 1
 
@@ -1845,7 +1845,7 @@ def main():
 
         #绘制缓存
         pygame.display.flip()
-        clock.tick(60)
+        clock.tick(1000)
 
 
 if __name__ == "__main__":
